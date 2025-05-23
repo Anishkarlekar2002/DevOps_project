@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t todo-app .'
+                sh 'docker build -t todo-app ./public'
             }
         }
         stage('Run Docker Container') {
